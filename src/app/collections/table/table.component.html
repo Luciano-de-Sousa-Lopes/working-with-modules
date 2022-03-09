@@ -1,0 +1,14 @@
+<table class="ui table" [ngClass]="classNames">
+  <thead>
+    <tr>
+      <th *ngFor="let label of tableLabel">{{ label.label }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of tableData">
+      <td data-label="" *ngFor="let label of tableLabel">
+        {{ data[label.key] }}
+      </td>
+    </tr>
+  </tbody>
+</table>

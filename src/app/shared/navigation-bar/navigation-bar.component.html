@@ -2,17 +2,37 @@
   <div class="ui secondary pointing menu">
     <a
       class="item"
+      routerLink="./"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      title="Home Page"
+    >
+      Home Page
+    </a>
+    <a
+      class="item"
       routerLink="/elements"
       routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
       title="Elemennts Home Page"
-      >Elements</a
     >
+      Elements
+    </a>
     <a
       class="item"
       routerLink="/collections"
       routerLinkActive="active"
       title="Collections Home Page"
-      >Collections</a
     >
+      Collections
+    </a>
+    <a
+      class="item"
+      routerLink="/views"
+      routerLinkActive="active"
+      title="Views Home Page"
+    >
+      Views
+    </a>
   </div>
 </div>
