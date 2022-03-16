@@ -11,7 +11,7 @@
     </a>
     <a
       class="item"
-      routerLink="/elements"
+      routerLink="./elements"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
       title="Elemennts Home Page"
@@ -20,7 +20,7 @@
     </a>
     <a
       class="item"
-      routerLink="/collections"
+      routerLink="./collections"
       routerLinkActive="active"
       title="Collections Home Page"
     >
@@ -28,11 +28,20 @@
     </a>
     <a
       class="item"
-      routerLink="/views"
+      routerLink="./views"
       routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
       title="Views Home Page"
     >
       Views
+    </a>
+    <a
+      class="item"
+      routerLink="./modules"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Modules
     </a>
   </div>
 </div>

@@ -1,0 +1,17 @@
+i.close.icon {
+    right: 0.5rem;
+    top: 0.5rem;
+    color: darkgreen;
+}
+
+.actions:empty {
+    display: none;
+}
+
+.actions-default {
+    display: none;
+}
+
+.actions:empty + .actions-default {
+    display: block;
+}
