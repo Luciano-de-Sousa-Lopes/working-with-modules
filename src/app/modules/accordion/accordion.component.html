@@ -1,16 +1,16 @@
 <div class="ui styled accordion">
-  <ng-container *ngFor="let item of quiz; let i = index">
+  <ng-container *appTimes="quiz.length; let i = index">
     <div
       class="title"
       [ngClass]="{ active: openedItemIndex === i }"
       (click)="openItem(i)"
     >
       <i class="dropdown icon"></i>
-      {{ item.question }}
+      {{ quiz[i].question }}
     </div>
     <div class="content" [ngClass]="{ active: openedItemIndex === i }">
       <p>
-        {{ item.answer }}
+        {{ quiz[i].answer }}
       </p>
     </div>
   </ng-container>
