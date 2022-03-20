@@ -1,0 +1,14 @@
+<app-divider>Modal Component</app-divider>
+<button type="buttonn" class="ui button primary" (click)="openCloseModal()">
+  Open Modal
+</button>
+<app-modal *ngIf="isModalVisible" (closeModal)="openCloseModal()">
+  <div modalTitle>REUSABLE TITLE!!!</div>
+  <p>Some content for the modal window should go right here!</p>
+  <button class="modalFooter ui button" (click)="openCloseModal()">
+    CLOSE ME!
+  </button>
+</app-modal>
+
+<app-divider>Accordion Component</app-divider>
+<app-accordion [data]="quiz"></app-accordion>

@@ -1,0 +1,22 @@
+i.close.icon {
+    top: 0.5rem;
+    right: 0.5rem;
+    color: darkgray;
+    transition: 0.5s;
+}
+
+i.close.icon:hover {
+    color: rgba(50,50,50,1);
+}
+
+.actions:empty {
+    display: none;
+}
+ 
+.default {
+    display: none;
+}
+
+.actions:empty + .default {
+    display: block;
+} 
